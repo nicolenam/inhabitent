@@ -35,10 +35,6 @@ body {
   color: #404040;
 }
 
-.main-menu {
-  // background-color: white;
-}
-
 #menu-main-menu {
   display: flex;
   justify-content: flex-end;
@@ -79,6 +75,13 @@ img {
   z-index: 2;
   margin-left: 100px;
   margin-top: 5px;
+}
+
+// SHOP GRID
+#shop {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
 }
 
 //FONT AWESOME
