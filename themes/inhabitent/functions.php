@@ -37,4 +37,10 @@ function inhabitent_widgets() {
 }
 
 add_action('widgets_init', 'inhabitent_widgets');
+
+add_action( 'wp_enqueue_scripts', 'crunchify_enqueue_fontawesome' );
+function crunchify_enqueue_fontawesome() {
+        wp_enqueue_style('font-awesome', 'https://cdn.crunchify.com/wp-content/icon/font-awesome/css/font-awesome.min.css');
+}
+
 ?>
