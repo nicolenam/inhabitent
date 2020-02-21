@@ -7,7 +7,7 @@
 
 <!-- shopt stuff here -->
 <article>
-<h2 id="shop">SHOP STUFF</h2>
+<h2 class="title">SHOP STUFF</h2>
 
 <div class="shopGrid">
   <div class="items">
@@ -46,8 +46,31 @@
     </p>
     <button class="shopBtn">WEAR STUFF</button>
   </div>
-
 </div>
+</article>
+<article>
+    <h2 class="title">INHABITENT JOURNAL</h2>
+    <div class="journalGrid">
+        <div class="jitems">
+            <div class="journImg">
+                <img src="wp-content/themes/inhabitent/assets/images/blog-photos/van-camper.jpg">
+            </div>
+            <button class="journalBtn">READ ENTRY</button>
+        </div>
+        <div class="jitems">
+            <div class="journImg">
+                <img src="wp-content/themes/inhabitent/assets/images/blog-photos/warm-cocktail.jpg">
+            </div>
+            <button class="journalBtn">READ ENTRY</button>
+        </div>
+        <div class="jitems">
+            <div class="journImg">
+                <img src="wp-content/themes/inhabitent/assets/images/blog-photos/healthy-camp-food.jpg">
+            </div>    
+            <button class="journalBtn">READ ENTRY</button>
+        </div>
+  </div>
+
 </article>
 <?php if( have_posts() ) :
 
