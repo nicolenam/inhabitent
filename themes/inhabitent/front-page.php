@@ -5,7 +5,7 @@
 <?php the_post_thumbnail(); ?>
 </div>
 
-<!-- shopt stuff here -->
+<!-- shop stuff here -->
 <article>
 <h2 class="title">SHOP STUFF</h2>
 
@@ -70,7 +70,27 @@
             <button class="journalBtn">READ ENTRY</button>
         </div>
   </div>
-
+</article>
+<article>
+  <h2 class="title">LATEST ADVENTURES</h2>
+    <div class="adGrid">
+        <div>
+          <img src="wp-content/themes/inhabitent/assets/images/adventure-photos/canoe-girl.jpg" alt="">
+          <button>READ MORE</button>
+        </div>
+        <div>
+          <img src="wp-content/themes/inhabitent/assets/images/adventure-photos/beach-bonfire.jpg" alt="">
+          <button>READ MORE</button>
+        </div>
+        <div>
+          <img src="wp-content/themes/inhabitent/assets/images/adventure-photos/mountain-hikers.jpg" alt="">
+          <button>READ MORE</button>
+        </div>
+        <div>
+          <img src="wp-content/themes/inhabitent/assets/images/adventure-photos/night-sky.jpg" alt="">
+          <button>READ MORE</button>
+        </div>
+    </div>
 </article>
 <?php if( have_posts() ) :
 
