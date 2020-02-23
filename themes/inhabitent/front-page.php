@@ -51,19 +51,19 @@
 <article>
     <h2 class="title">INHABITENT JOURNAL</h2>
     <div class="journalGrid">
-        <div class="jitems">
+        <div class="jItems">
             <div class="journImg">
                 <img src="wp-content/themes/inhabitent/assets/images/blog-photos/van-camper.jpg">
             </div>
             <button class="journalBtn">READ ENTRY</button>
         </div>
-        <div class="jitems">
+        <div class="jItems">
             <div class="journImg">
                 <img src="wp-content/themes/inhabitent/assets/images/blog-photos/warm-cocktail.jpg">
             </div>
             <button class="journalBtn">READ ENTRY</button>
         </div>
-        <div class="jitems">
+        <div class="jItems">
             <div class="journImg">
                 <img src="wp-content/themes/inhabitent/assets/images/blog-photos/healthy-camp-food.jpg">
             </div>    
@@ -74,20 +74,29 @@
 <article>
   <h2 class="title">LATEST ADVENTURES</h2>
     <div class="adGrid">
-        <div>
+        <div class="adItems">
           <img src="wp-content/themes/inhabitent/assets/images/adventure-photos/canoe-girl.jpg" alt="">
+          <p>Getting Back to </br>
+            Nature in a Canoe</p>
           <button>READ MORE</button>
         </div>
-        <div>
+        <div class="adItems">
           <img src="wp-content/themes/inhabitent/assets/images/adventure-photos/beach-bonfire.jpg" alt="">
+          <p>A Night with Friends at </br>
+            the Beach</p>
           <button>READ MORE</button>
         </div>
-        <div>
+        <div class="adItems">
           <img src="wp-content/themes/inhabitent/assets/images/adventure-photos/mountain-hikers.jpg" alt="">
+          <p>Taking in the </br>
+            view at Big</br>
+            Mountain</p>
           <button>READ MORE</button>
         </div>
-        <div>
+        <div class="adItems">
           <img src="wp-content/themes/inhabitent/assets/images/adventure-photos/night-sky.jpg" alt="">
+          <p>Star-Gazing at </br>
+            the Night Sky</p>
           <button>READ MORE</button>
         </div>
     </div>
