@@ -1,0 +1,32 @@
+#shopTitle {
+  height: 100px;
+  margin-top: 100px;
+}
+
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1120px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  height: 250px;
+  grid-column-gap: 30px;
+  justify-items: center;
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.shopContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #248A83;
+  height: 50px;
+p {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+}

@@ -1,4 +1,8 @@
 <?php get_header(); ?>
+<a href="./home"><img id="tent" src="<?php echo get_template_directory_uri();?>/assets/images/logos/inhabitent-logo-tent-white.svg"></a>
+<div class="onHero">
+<?php the_post_thumbnail(); ?>
+</div>
 
 <?php if( have_posts() ) :
 //The WordPress Loop: loads post content 
@@ -6,6 +10,8 @@
         the_post(); ?>
     
     <h2><?php the_title(); ?></h2>
+
+
     <?php the_content(); ?>
     
     <!-- Loop ends -->

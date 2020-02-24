@@ -13,7 +13,7 @@
 <!-- <img id="homeBackground" src="wp-content/themes/inhabitent/assets/images/home-hero.jpg"> -->
 
 <nav class='main-menu'>
-
+    
 
     <?php wp_nav_menu(array(
         'theme-location' => 'main'
