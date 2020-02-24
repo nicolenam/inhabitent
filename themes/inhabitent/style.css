@@ -219,7 +219,8 @@ p {
   justify-items: center; }
   .productGrid img {
     width: 200px;
-    height: 200px; }
+    height: 200px;
+    border-bottom: solid 5px #e1e1e1; }
 
 .shopContainer {
   display: -webkit-box;

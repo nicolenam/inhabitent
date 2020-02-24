@@ -23,7 +23,9 @@
     
     <div class="shopItems">
     <?php the_post_thumbnail()?>
-    <h2><?php the_title(); ?></h2>     
+    <!-- <div class="proDetails"> -->
+    <p><?php the_title(); ?><p>     
+    <!-- </div> -->
     </div>
 
     <!-- <h3><?php the_permalink();?></h3> -->
