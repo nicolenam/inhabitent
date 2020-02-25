@@ -16,8 +16,9 @@
    
 <!--     
     <h3><?php the_permalink();?></h3> -->
+    <div class='content'>
     <?php the_content(); ?>
-    
+    </div>
     <!-- Loop ends -->
     <?php endwhile;?>
 
