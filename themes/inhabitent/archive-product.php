@@ -23,6 +23,11 @@
     
     <div class="shopItems">
     <?php the_post_thumbnail()?>
+
+    <span class='price'>
+        <?php echo '$'.get_field('price');?>
+    </span>
+
     <!-- <div class="proDetails"> -->
     <p><?php the_title(); ?><p>     
     <!-- </div> -->
@@ -30,7 +35,7 @@
 
     <!-- <h3><?php the_permalink();?></h3> -->
     <?php the_content(); ?>
-
+    
  
     <!-- Loop ends -->
     <?php endwhile;?>
