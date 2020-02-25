@@ -33,16 +33,19 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  color: #248a83;
   height: 50px;
-  border-bottom: solid #e1e1e1;
+  border-bottom: dotted #e1e1e1;
   margin-left: 90px;
   margin-right: 90px;
-  p {
+}
+.shopContainer p {
     padding-right: 30px;
     padding-left: 30px;
+    color: #248a83;
+    font-family: 'Novecento Sans Web';
+    font-size: 16px;
   }
-}
+
 
 .priceCont {
   display: flex;

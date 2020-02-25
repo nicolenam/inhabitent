@@ -202,7 +202,8 @@ img {
   height: auto; }
 
 p {
-  font-size: 16px;
+  font-size: 12px;
+  color: black;
   font-family: 'Merriweather Web'; }
 
 .journalGrid {
@@ -334,14 +335,17 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #248a83;
   height: 50px;
-  border-bottom: solid #e1e1e1;
+  border-bottom: dotted #e1e1e1;
   margin-left: 90px;
   margin-right: 90px; }
-  .shopContainer p {
-    padding-right: 30px;
-    padding-left: 30px; }
+
+.shopContainer p {
+  padding-right: 30px;
+  padding-left: 30px;
+  color: #248a83;
+  font-family: 'Novecento Sans Web';
+  font-size: 16px; }
 
 .priceCont {
   display: -webkit-box;
