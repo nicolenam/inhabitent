@@ -24,13 +24,15 @@
     <div class="shopItems">
     <?php the_post_thumbnail()?>
 
-    <span class='price'>
+    <span class="priceCont">
+        <p><?php the_title(); ?><p>
+  
+  <span class='price'>
         <?php echo '$'.get_field('price');?>
+  </span>
     </span>
 
-    <!-- <div class="proDetails"> -->
-    <p><?php the_title(); ?><p>     
-    <!-- </div> -->
+
     </div>
 
     <!-- <h3><?php the_permalink();?></h3> -->
