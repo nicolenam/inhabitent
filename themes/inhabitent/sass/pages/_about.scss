@@ -1,3 +1,5 @@
+
+
 .about {
   background-size: cover;
   background-repeat: no-repeat;
@@ -9,7 +11,9 @@
 #aboutTitle {
   position: absolute;
   color: white;
-  font-family: 'Novecento Sans Web Bold';
+  font-family: $title_font;
+  font-size: 45px;
+
 }
 
 .aboutContainer {
@@ -25,10 +29,12 @@
     text-align: center;
     margin-bottom: 50px;
     margin-top: 50px;
+    font-family: $title_font;
     }
     p{
     margin-left: 300px;
     margin-right: 300px;
     padding-bottom: 20px;
+    font-family: $description_font;
     }
 }

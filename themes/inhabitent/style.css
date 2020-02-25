@@ -110,7 +110,7 @@ body {
           justify-content: flex-end;
   position: fixed;
   width: 100%;
-  font-family: 'Novecento Sans Web'; }
+  font-family: "Novecento Sans Web"; }
 
 a {
   color: white;
@@ -151,11 +151,11 @@ img {
           filter: brightness(100%); }
 
 #tent {
-  width: 4%;
+  width: 3.5%;
   height: auto;
   position: fixed;
   z-index: 2;
-  margin-left: 100px;
+  margin-left: 70px;
   margin-top: 5px;
   -webkit-filter: brightness(100%);
           filter: brightness(100%); }
@@ -168,7 +168,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 50px;
-  font-family: 'Novecento Sans Web Bold'; }
+  font-family: "Novecento Sans Web Bold"; }
 
 .shopGrid {
   display: grid;
@@ -199,12 +199,14 @@ img {
 
 .items img {
   width: 20%;
-  height: auto; }
+  height: auto;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%); }
 
 p {
   font-size: 12px;
   color: black;
-  font-family: 'Merriweather Web'; }
+  font-family: "Merriweather Web"; }
 
 .journalGrid {
   display: grid;
@@ -231,7 +233,9 @@ p {
 
 .jItems img {
   width: 100%;
-  height: 250px; }
+  height: 250px;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%); }
 
 .adGrid {
   display: grid;
@@ -244,7 +248,9 @@ p {
 
 .adItems img {
   width: 100%;
-  height: auto; }
+  height: auto;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%); }
 
 .adItems:nth-child(1) {
   grid-column: 1/3;
@@ -264,7 +270,8 @@ p {
 #aboutTitle {
   position: absolute;
   color: white;
-  font-family: 'Novecento Sans Web Bold'; }
+  font-family: "Novecento Sans Web Bold";
+  font-size: 45px; }
 
 .aboutContainer {
   display: -webkit-box;
@@ -287,17 +294,19 @@ p {
           flex-direction: column;
   text-align: center;
   margin-bottom: 50px;
-  margin-top: 50px; }
+  margin-top: 50px;
+  font-family: "Novecento Sans Web Bold"; }
 
 .content p {
   margin-left: 300px;
   margin-right: 300px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+  font-family: "Merriweather Web"; }
 
 #shopTitle {
   height: 100px;
   margin-top: 100px;
-  font-family: 'Novecento Sans Web Bold'; }
+  font-family: "Novecento Sans Web Bold"; }
 
 .shopItems {
   margin-bottom: 20px;
@@ -344,7 +353,7 @@ p {
   padding-right: 30px;
   padding-left: 30px;
   color: #248a83;
-  font-family: 'Novecento Sans Web';
+  font-family: "Novecento Sans Web";
   font-size: 16px; }
 
 .priceCont {
