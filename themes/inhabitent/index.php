@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<div class="posts">
 <?php get_sidebar(); ?>
 
 <?php if( have_posts() ) :
@@ -7,15 +8,19 @@
     while( have_posts() ) :
         the_post(); ?>
     
-    <h2><?php the_title(); ?></h2>
+    
     <!-- <h3><?php the_permalink();?></h3> -->
+    <div class="journalLayout">
+    <h2><?php the_title(); ?></h2>
     <?php the_post_thumbnail(); ?>
     <?php the_content(); ?>
-    <p><?php the_author(); ?></p>
     <p><?php echo the_date(); ?></p>
+    <p><?php the_author(); ?></p>
+   
+    </div>
     <!-- Loop ends -->
     <?php endwhile;?>
-
+</div>
     <?php the_posts_navigation();?>
     
     

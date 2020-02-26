@@ -11,10 +11,10 @@
 <p>SLEEP</p>
 <p>WEAR</p>
 </div>
+
 <div class="productGrid">
   
 <?php if( have_posts() ) :
-
 
 
 //The WordPress Loop: loads post content 
@@ -29,14 +29,14 @@
         <!-- <span class='price'> -->
         <?php echo '$'.get_field('price');?>
         <!-- </span> -->
+        
     </span>
 
 
     </div>
-
     <!-- <h3><?php the_permalink();?></h3> -->
     <?php the_content(); ?>
-    
+   
  
     <!-- Loop ends -->
     <?php endwhile;?>
@@ -44,12 +44,14 @@
     <!-- <?php the_posts_navigation();?> -->
 
     
+    </div>
 
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
 
 
-</div>
+
+
     
 <?php get_footer();?>

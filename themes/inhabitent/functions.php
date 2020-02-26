@@ -3,7 +3,7 @@
 //Adds script and stylesheets
 function inhabitant_files() {
     wp_enqueue_style('inhabitant_styles', get_stylesheet_uri('/build/css/style.min.css'), NULL, microtime());
-    wp_enqueue_style('fonts', "https://fonts.googleapis.com/css?family=Lato&display=swap");
+    // wp_enqueue_style('fonts', "https://fonts.googleapis.com/css?family=Lato&display=swap");
     
 }
 
@@ -107,9 +107,9 @@ function inhabitent_post_types(){
         register_taxonomy( 'product-type', array( 'product' ), $args );
 }
 
-add_action( 'wp_enqueue_scripts', 'crunchify_enqueue_fontawesome' );
-function crunchify_enqueue_fontawesome() {
-        wp_enqueue_style('font-awesome', 'https://cdn.crunchify.com/wp-content/icon/font-awesome/css/font-awesome.min.css');
-}
+// add_action( 'wp_enqueue_scripts', 'crunchify_enqueue_fontawesome' );
+// function crunchify_enqueue_fontawesome() {
+//         wp_enqueue_style('font-awesome', 'https://cdn.crunchify.com/wp-content/icon/font-awesome/css/font-awesome.min.css');
+// }
 
 ?>
