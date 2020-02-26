@@ -42,8 +42,17 @@ function inhabitent_widgets() {
         'after_widget' => '</aside>',
         'before_title' => '<h2 class="widget-hours">',
         'after_title' => '</h2>'
-
     ));
+    register_sidebar(array(
+        'name' => 'footer',
+        'id' => 'footer',
+        'description' => 'Add a text block with your business hours, contact info, etc',
+        'before_widget' => '<aside id="%1$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h2 class="widget-hours">',
+        'after_title' => '</h2>'
+    ));
+    
 }
 
 add_action('widgets_init', 'inhabitent_widgets');

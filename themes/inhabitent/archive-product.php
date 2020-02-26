@@ -26,10 +26,9 @@
 
     <span class="priceCont">
         <p><?php the_title(); ?><p>
-  
-  <span class='price'>
+        <!-- <span class='price'> -->
         <?php echo '$'.get_field('price');?>
-  </span>
+        <!-- </span> -->
     </span>
 
 

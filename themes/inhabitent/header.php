@@ -12,11 +12,13 @@
 <body <?php body_class();?>>
 <!-- <img id="homeBackground" src="wp-content/themes/inhabitent/assets/images/home-hero.jpg"> -->
 
-<nav class='main-menu'>
-    
+<header>
+        <nav class="<?php echo is_page(array('About', 'Home')) ? 'main-menu' : 'main-menu2' ;?>">
 
-    <?php wp_nav_menu(array(
-        'theme-location' => 'main'
-    )) ;?>
-</nav>
+<!-- Menu -->
+        <?php wp_nav_menu(array(
+        'theme_location' => 'main'
+        )) ;?>  
+        </nav>
+    </header>
 

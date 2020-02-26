@@ -68,7 +68,7 @@
 }
 
 @font-face {
-  font-family: 'Merriweather Web';
+  font-family: 'Merriweather Web bold';
   src: url('fonts/merriweather-bold-webfont.eot');
   src: url('fonts/merriweather-bold-webfont.eot?#iefix')
       format('embedded-opentype'),
@@ -102,3 +102,4 @@
 $title_font: 'Novecento Sans Web Bold';
 $title_font_sub: 'Novecento Sans Web'; 
 $description_font:  'Merriweather Web';
+$description_font_bold: 'Merriweather Web bold';

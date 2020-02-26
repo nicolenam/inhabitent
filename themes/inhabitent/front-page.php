@@ -7,7 +7,7 @@
 </div>
 
 <!-- shop stuff here -->
-<article>
+<!-- <article>
 <h2 class="title">SHOP STUFF</h2>
 
 <div class="shopGrid">
@@ -101,7 +101,7 @@
           <button>READ MORE</button>
         </div>
     </div>
-</article>
+</article> -->
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
@@ -122,5 +122,49 @@
         <p>No posts found</p>
 <?php endif;?>
 
-    
+<h2 class="title">SHOP STUFF</h2>
+
+<div class="shopGrid">
+<?php 
+$terms = get_terms(array(
+  'taxonomy' => 'product-type',
+  'hide_empty' => false
+));
+
+
+foreach($terms as $term) : 
+
+  $file_name = $term->name . ".svg";
+  // echo "<p>";
+  // echo $term->name;
+  // echo "</p>";?>
+  <div class="items">
+    <img  class="jImage" src='<?php echo get_template_directory_uri() . "/assets/images/product-type-icons/$file_name"?>'>
+  </div>
+<?php endforeach; ?>
+</div>
+
+<!-- CUSTOM POST LOOP STARTS-->
+<?php
+   $args = array(
+      'post_type' => 'post', 
+       'order' => 'ASC' ,
+       'numberposts' => 3
+   );
+   $product_posts = get_posts( $args ); // returns an array of posts
+?>
+<h2 class="title">INHABITENT JOURNAL</h2>
+
+
+<?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+  <div class="jItems">
+   <div class="journImg">
+      <?php the_post_thumbnail() ?>
+   </div>
+    <?php the_title() ?>
+  </div>
+  
+  <?php endforeach; wp_reset_postdata(); ?>
+
+   
 <?php get_footer();?>
