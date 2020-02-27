@@ -178,4 +178,7 @@ foreach($terms as $term) :
     <?php endforeach; wp_reset_postdata(); ?>
 </div>
    
+
+<h2 class="title">LATEST ADVENTURES</h2>
+
 <?php get_footer();?>

@@ -12,15 +12,18 @@
 <p>WEAR</p>
 </div>
 
+
+
+
+
 <div class="productGrid">
-  
 <?php if( have_posts() ) :
 
 
 //The WordPress Loop: loads post content 
     while( have_posts() ) :
         the_post(); ?>
-    
+
     <div class="shopItems">
     <?php the_post_thumbnail()?>
 
@@ -32,26 +35,25 @@
         
     </span>
 
-
     </div>
+    
     <!-- <h3><?php the_permalink();?></h3> -->
     <?php the_content(); ?>
    
  
     <!-- Loop ends -->
     <?php endwhile;?>
-
+   
     <!-- <?php the_posts_navigation();?> -->
-
     
     </div>
 
 <?php else : ?>
         <p>No posts found</p>
 <?php endif;?>
-
-
-
-
     
 <?php get_footer();?>
+
+
+
+

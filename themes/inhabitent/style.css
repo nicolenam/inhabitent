@@ -97,15 +97,51 @@ table {
   font-style: italic; }
 
 footer {
-  background-image: url(./assets/images/dark-wood.png); }
+  background-image: url(./assets/images/dark-wood.png);
+  height: 400px; }
+  footer p {
+    font-family: "Novecento Sans Web Bold"; }
 
-footer p {
-  font-family: "Novecento Sans Web Bold"; }
+.footContainer {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 350px; }
 
 .textwidget p {
-  font-family: "Novecento Sans Web";
+  font-family: "Merriweather Web";
   font-size: 16px;
-  color: pink; }
+  color: white; }
+
+#text-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Novecento Sans Web Bold";
+  color: #d99054; }
+
+#text-6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Novecento Sans Web Bold";
+  color: #d99054; }
+
+#text-7 p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .journalLayout {
   position: relative;
