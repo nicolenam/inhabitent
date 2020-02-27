@@ -40,7 +40,7 @@ function inhabitent_widgets() {
         'description' => 'Add a text block with your business hours, contact info, etc',
         'before_widget' => '<aside id="%1$s">',
         'after_widget' => '</aside>',
-        'before_title' => '<h2 class="widget-hours">',
+        'before_title' => '<h2 class="widget-hours1">',
         'after_title' => '</h2>'
     ));
     register_sidebar(array(

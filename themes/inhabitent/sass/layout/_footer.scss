@@ -26,6 +26,8 @@ footer {
   flex-direction: column;
   font-family: $title_font;
   color: #d99054;
+  font-size: 20px;
+  margin-top: 100px;
 }
 
 #text-6 {
@@ -33,9 +35,14 @@ footer {
   flex-direction: column;
   font-family: $title_font;
   color: #d99054;
+  font-size: 20px;
+  margin-top: 100px;
 }
 
 #text-7 p {
   display: flex;
   justify-content: center;
+  padding-top: 350px;
+  font-family: $title_font_sub;
 }
+
