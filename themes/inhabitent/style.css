@@ -142,7 +142,8 @@ footer p {
 body {
   background: white;
   font-size: 2em;
-  color: #404040; }
+  color: #404040;
+  width: 100%; }
 
 #menu-main-menu {
   display: -webkit-box;

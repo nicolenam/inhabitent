@@ -112,7 +112,7 @@
     <!-- <h2><?php the_title(); ?></h2> -->
     <!-- <h3><?php the_permalink();?></h3> -->
     <?php the_content(); ?>
-    
+      
     <!-- Loop ends -->
     <?php endwhile;?>
 
@@ -140,6 +140,12 @@ foreach($terms as $term) :
   // echo "</p>";?>
   <div class="items">
     <img  class="jImage" src='<?php echo get_template_directory_uri() . "/assets/images/product-type-icons/$file_name"?>'>
+    <p>
+    Get back to nature with all </br>
+    the tools and toys you need to </br>
+    enjoy the great outdoors. </br>
+    </p>
+    <button class="shopBtn">DO STUFF</button>
   </div>
 <?php endforeach; ?>
 </div>
@@ -163,8 +169,7 @@ foreach($terms as $term) :
    </div>
     <?php the_title() ?>
   </div>
-  
-  <?php endforeach; wp_reset_postdata(); ?>
+    <?php endforeach; wp_reset_postdata(); ?>
 
    
 <?php get_footer();?>
