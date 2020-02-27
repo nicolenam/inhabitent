@@ -122,6 +122,8 @@
         <p>No posts found</p>
 <?php endif;?>
 
+
+
 <h2 class="title">SHOP STUFF</h2>
 
 <div class="shopGrid">
@@ -151,6 +153,8 @@ foreach($terms as $term) :
 </div>
 
 <!-- CUSTOM POST LOOP STARTS-->
+<h2 class="title">INHABITENT JOURNAL</h2>
+<div class="journalGrid">
 <?php
    $args = array(
       'post_type' => 'post', 
@@ -159,17 +163,19 @@ foreach($terms as $term) :
    );
    $product_posts = get_posts( $args ); // returns an array of posts
 ?>
-<h2 class="title">INHABITENT JOURNAL</h2>
+
 
 
 <?php foreach ( $product_posts as $post ) : setup_postdata( $post ); ?>
+
   <div class="jItems">
    <div class="journImg">
-      <?php the_post_thumbnail() ?>
+        <?php the_post_thumbnail() ?>
    </div>
     <?php the_title() ?>
   </div>
-    <?php endforeach; wp_reset_postdata(); ?>
 
+    <?php endforeach; wp_reset_postdata(); ?>
+</div>
    
 <?php get_footer();?>
