@@ -137,17 +137,16 @@ $terms = get_terms(array(
 foreach($terms as $term) : 
 
   $file_name = $term->name . ".svg";
-  // echo "<p>";
-  // echo $term->name;
-  // echo "</p>";?>
+?>
   <div class="items">
     <img  class="jImage" src='<?php echo get_template_directory_uri() . "/assets/images/product-type-icons/$file_name"?>'>
-    <p>
-    Get back to nature with all </br>
-    the tools and toys you need to </br>
-    enjoy the great outdoors. </br>
-    </p>
-    <button class="shopBtn">DO STUFF</button>
+    <?php echo "<p>";
+          echo $term->description; 
+          echo "</p>";
+          echo "<button>";
+          echo $term->name . ' stuff';
+          echo "</button>";
+    ?>
   </div>
 <?php endforeach; ?>
 </div>
