@@ -158,11 +158,12 @@ footer {
 
 .journalLayout {
   position: relative;
-  grid-column: 1/2; }
+  grid-column: 1/2;
+  margin-top: 70px; }
   .journalLayout h2 {
     position: absolute;
     color: white;
-    background: #248A83;
+    background: #248a83;
     width: 300px;
     padding-right: 70px;
     padding-left: 10px;
@@ -178,6 +179,17 @@ footer {
   .journalLayout p {
     font-family: "Merriweather Web"; }
 
+.dateAuthor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  color: white;
+  background: #248a83;
+  width: 200px;
+  margin-top: 400px;
+  margin-left: 470px; }
+
 .posts {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -186,18 +198,27 @@ footer {
 .sidebar {
   grid-column: 2/3;
   grid-row: 2/3;
-  padding-left: 100px; }
+  padding-left: 100px;
+  margin-top: 70px; }
 
 .widget-hours1 {
-  font-family: "Novecento Sans Web Bold"; }
+  font-family: "Novecento Sans Web Bold";
+  color: #2f1339;
+  font-size: 20px;
+  margin-bottom: 20px; }
 
 #text-3 p {
-  color: black;
-  font-family: "Novecento Sans Web"; }
+  color: #248a83;
+  font-family: "Merriweather Web"; }
 
 #text-4 p {
   color: black;
-  font-family: "Novecento Sans Web"; }
+  font-family: "Merriweather Web"; }
+
+#archives-3 a {
+  color: #248a83;
+  text-decoration: none;
+  font-family: "Merriweather Web"; }
 
 body {
   background: white;
@@ -216,8 +237,12 @@ body {
   width: 100%;
   font-family: "Novecento Sans Web"; }
 
-a {
+.main-menu a {
   color: white;
+  text-decoration: none; }
+
+.main-menu2 a {
+  color: #248A83;
   text-decoration: none; }
 
 li {
@@ -471,3 +496,19 @@ p {
       justify-content: space-around;
   margin-top: 10px;
   margin-bottom: 10px; }
+
+.proGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  margin-top: 50px;
+  margin-right: 60px;
+  margin-left: 60px; }
+
+.proImg img {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+  width: 500px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover; }

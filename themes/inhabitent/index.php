@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<a href="./home"><img id="tent" src="<?php echo get_template_directory_uri();?>/assets/images/logos/inhabitent-logo-tent.svg"></a>
 <div class="posts">
 <?php get_sidebar(); ?>
 
@@ -12,10 +13,13 @@
     <!-- <h3><?php the_permalink();?></h3> -->
     <div class="journalLayout">
     <h2><?php the_title(); ?></h2>
+    <div class="dateAuthor">
+    <p><?php echo the_date() . '/&nbsp'; ?></p>
+    <p><?php the_author(); ?></p>
+    </div>
     <?php the_post_thumbnail(); ?>
     <?php the_content(); ?>
-    <p><?php echo the_date(); ?></p>
-    <p><?php the_author(); ?></p>
+   
    
     </div>
     <!-- Loop ends -->

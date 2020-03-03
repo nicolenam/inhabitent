@@ -1,48 +1,70 @@
-.journalLayout{
-    position: relative;
-    grid-column: 1/2;
-h2{
+.journalLayout {
+  position: relative;
+  grid-column: 1/2;
+  margin-top: 70px;
+  h2 {
     position: absolute;
     color: white;
-    background: #248A83;
+    background: #248a83;
     width: 300px;
     padding-right: 70px;
     padding-left: 10px;
     font-family: $title_font_sub;
     margin-top: 30px;
-}
-img {
+  }
+  img {
     filter: brightness(100%);
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-p {
+  }
+  p {
     font-family: $description_font;
+  }
 }
+
+.dateAuthor {
+  display: flex;
+  position: absolute;
+  color: white;
+  background: #248a83;
+  width: 200px;
+margin-top: 400px;
+  margin-left: 470px;
 }
 
 .posts {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-left: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 100px;
 }
 .sidebar {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    padding-left: 100px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding-left: 100px;
+  margin-top: 70px;
 }
 
 .widget-hours1 {
-    font-family: $title_font;
+  font-family: $title_font;
+  color: #2f1339;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 #text-3 p {
-    color: black;
-    font-family: $title_font_sub;
+  color:  #248a83;
+  font-family: $description_font;
+  
 }
 
 #text-4 p {
-    color: black;
-    font-family: $title_font_sub;
+  color: black;
+  font-family: $description_font;
+}
+
+#archives-3 a {
+    color: #248a83;
+    text-decoration: none;
+    font-family: $description_font;
 }

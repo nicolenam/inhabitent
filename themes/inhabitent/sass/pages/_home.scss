@@ -5,7 +5,6 @@ body {
   color: #404040;
   width: 100%;
 }
-
 #menu-main-menu {
   display: flex;
   justify-content: flex-end;
@@ -13,12 +12,14 @@ body {
   width: 100%;
   font-family: $title_font_sub;
 }
-
-a {
+.main-menu a {
   color: white;
   text-decoration: none;
 }
-
+.main-menu2 a {
+  color: #248A83;
+  text-decoration: none;
+}
 li {
   font-size: 15px;
   padding-right: 30px;

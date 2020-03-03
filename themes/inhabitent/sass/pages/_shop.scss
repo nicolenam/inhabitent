@@ -67,3 +67,19 @@
   margin-bottom: 10px;
 }
 
+//SINGLE PRODUCT PAGE
+
+.proGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  margin-top: 50px;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+.proImg img{
+  filter: brightness(100%);
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+}

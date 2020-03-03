@@ -1,0 +1,12 @@
+@mixin footerInfo {
+    display: flex;
+    flex-direction: column;
+    font-family: $title_font;
+    color: #d99054;
+    font-size: 20px;
+    margin-top: 100px;
+    margin-left: 50px;
+  .widget-hours{
+    padding-bottom: 20px;
+  }
+  }
