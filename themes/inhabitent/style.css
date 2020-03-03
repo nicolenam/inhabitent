@@ -508,7 +508,18 @@ p {
 .proImg img {
   -webkit-filter: brightness(100%);
           filter: brightness(100%);
-  width: 500px;
+  width: 600px;
   height: 400px;
   -o-object-fit: cover;
-     object-fit: cover; }
+     object-fit: cover;
+  margin-left: 70px;
+  margin-top: 100px; }
+
+.proContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.proInfo {
+  margin-top: 100px;
+  margin-left: 50px; }

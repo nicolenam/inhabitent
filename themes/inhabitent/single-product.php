@@ -7,14 +7,17 @@
         the_post(); ?>
 
         
-<div class="proGrid">
+    
+    <div class="proContainer">
     <div class="proImg"><?php the_post_thumbnail();?></div>
+
+    <div class="proInfo">
     <h2><?php the_title(); ?></h2>
     <?php echo '$'.get_field('price');?>
-    <!-- <h3><?php the_permalink();?></h3> -->
     <?php the_content(); ?>
-</div>
+    </div>
     
+    </div>
     <!-- Loop ends -->
     <?php endwhile;?>
 
