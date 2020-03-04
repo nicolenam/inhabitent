@@ -156,6 +156,16 @@ footer {
   padding-top: 350px;
   font-family: "Novecento Sans Web"; }
 
+#media_image-4 {
+  z-index: 1; }
+  #media_image-4 img {
+    max-width: 100%;
+    height: auto;
+    width: 400px;
+    grid-column: 5/6;
+    margin-top: 100px;
+    margin-left: 200px; }
+
 .journalLayout {
   position: relative;
   grid-column: 1/2;
