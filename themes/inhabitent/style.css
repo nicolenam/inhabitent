@@ -521,5 +521,28 @@ p {
   display: flex; }
 
 .proInfo {
-  margin-top: 100px;
-  margin-left: 50px; }
+  margin-left: 50px;
+  margin-right: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 70px; }
+  .proInfo h2 {
+    font-family: "Novecento Sans Web Bold";
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #d99054; }
+  .proInfo h3 {
+    font-family: "Novecento Sans Web";
+    font-size: 25px; }
+  .proInfo p {
+    font-family: "Merriweather Web";
+    font-size: 12px;
+    line-height: 2; }

@@ -171,6 +171,8 @@ foreach($terms as $term) :
    <div class="journImg">
         <?php the_post_thumbnail() ?>
    </div>
+   <p><?php echo the_date();?></p>
+   <!-- <p><?php echo get_comments();?></p> -->
     <?php the_title() ?>
   </div>
 

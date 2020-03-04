@@ -13,8 +13,8 @@
 
     <div class="proInfo">
     <h2><?php the_title(); ?></h2>
-    <?php echo '$'.get_field('price');?>
-    <?php the_content(); ?>
+    <h3><?php echo '$'.get_field('price');?></h3>
+    <p><?php the_content(); ?><p>
     </div>
     
     </div>

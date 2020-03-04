@@ -89,6 +89,26 @@
 }
 
 .proInfo {
-  margin-top: 100px;
   margin-left: 50px;
+  margin-right: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 70px;
+
+  h2 {
+    font-family: $title_font;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #d99054;
+  }
+  h3 {
+    font-family: $title_font_sub;
+    font-size: 25px;
+  }
+  p {
+    font-family: $description_font;
+    font-size: 12px;
+    line-height: 2;
+  }
 }
