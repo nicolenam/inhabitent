@@ -164,7 +164,9 @@ footer {
     width: 400px;
     grid-column: 5/6;
     margin-top: 100px;
-    margin-left: 200px; }
+    margin-left: 200px;
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%); }
 
 .journalLayout {
   position: relative;
@@ -352,8 +354,23 @@ p {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 30px;
   margin-top: 50px;
-  margin-right: 60px;
-  margin-left: 60px; }
+  margin-right: 20px;
+  margin-left: 20px; }
+  .journalGrid h4 {
+    font-family: "Novecento Sans Web Bold";
+    color: #248A83;
+    text-transform: uppercase;
+    font-size: 20px; }
+
+.comments {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 400px; }
 
 .jItems {
   display: -webkit-box;
@@ -370,7 +387,7 @@ p {
   color: #e1e1e1; }
 
 .journImg img {
-  width: 400px;
+  width: 450px;
   height: 400px;
   -o-object-fit: cover;
      object-fit: cover;

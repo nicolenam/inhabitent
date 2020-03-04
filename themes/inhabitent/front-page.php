@@ -171,9 +171,11 @@ foreach($terms as $term) :
    <div class="journImg">
         <?php the_post_thumbnail() ?>
    </div>
+   <div class="comments">
    <p><?php echo the_date();?></p>
    <!-- <p><?php echo get_comments();?></p> -->
-    <?php the_title() ?>
+   <h4> <?php the_title() ?> </h4>
+   </div>
   </div>
 
     <?php endforeach; wp_reset_postdata(); ?>

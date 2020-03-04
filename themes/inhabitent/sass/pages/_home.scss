@@ -102,8 +102,20 @@ p {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 30px;
   margin-top: 50px;
-  margin-right: 60px;
-  margin-left: 60px;
+  margin-right: 20px;
+  margin-left: 20px;
+  h4 {
+    font-family: $title_font;
+    color: #248A83;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
 }
 
 .jItems {
@@ -115,7 +127,7 @@ p {
 }
 
 .journImg img {
-  width: 400px;
+  width: 450px;
   height: 400px;
   object-fit: cover;
   filter: brightness(100%);
