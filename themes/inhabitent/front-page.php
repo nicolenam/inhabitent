@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <!-- <img src="<?php echo get_template_directory_uri() . '/assets/images/home-hero.jpg';?>"> -->
-<img id="tent" src="wp-content/themes/inhabitent/assets/images/logos/inhabitent-logo-tent-white.svg">
+<!-- <img id="tent" src="wp-content/themes/inhabitent/assets/images/logos/inhabitent-logo-tent-white.svg"> -->
 <div class="onHero">
 <img id="logo" src="wp-content/themes/inhabitent/assets/images/logos/inhabitent-logo-full.svg">
 <?php the_post_thumbnail(); ?>

@@ -3,23 +3,16 @@
 //Adds script and stylesheets
 function inhabitant_files() {
     wp_enqueue_style('inhabitant_styles', get_stylesheet_uri('/build/css/style.min.css'), NULL, microtime());
-    // wp_enqueue_style('fonts', "https://fonts.googleapis.com/css?family=Lato&display=swap");
-    
+    wp_enqueue_style('fonts', "https://fonts.googleapis.com/css?family=Lato&display=swap");
+    wp_enqueue_style('font-awesome-cdn', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', array(), '4.4.0');
+    wp_enqueue_script('inhabitent-search-toggle', get_template_directory_uri() . '/build/js/search-toggle.min.js' , array('jquery'), NULL, true);
+  
 }
 
 add_action('wp_enqueue_scripts', 'inhabitant_files');
 
 
-// function wpdocs_theme_name_scripts() {
-//     wp_enqueue_style( 'global', get_stylesheet_uri() );
 
-//     if ( is_page(5) ) {
-//       wp_enqueue_style( 'page-five', get_stylesheet_uri() . '/page-five-styles.css' );
-//     }
-// }
-// add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
-
-//Adds theme support - ex: title tag
 function inhabitant_features() {
     add_theme_support('title-tag');
 
@@ -31,7 +24,7 @@ function inhabitant_features() {
 }
 
 add_action('after_setup_theme', 'inhabitant_features');
-remove_action('shutdown', 'wp_ob_end_flush_all', 1); //added 
+remove_action('shutdown', 'wp_ob_end_flush_all', 1);
 
 function inhabitent_widgets() {
     register_sidebar(array(
@@ -115,9 +108,6 @@ function inhabitent_post_types(){
         );
         register_taxonomy( 'product-type', array( 'product' ), $args );
 }
-
-
-
 
 
 ?>

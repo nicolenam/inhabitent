@@ -12,14 +12,17 @@
     
     <!-- <h3><?php the_permalink();?></h3> -->
     <div class="journalLayout">
-    <h2><?php the_title(); ?></h2>
-    <div class="dateAuthor">
-    <p><?php echo the_date() . '/&nbsp'; ?></p>
-    <p><?php the_author(); ?></p>
-    </div>
+
+        <h2><?php the_title(); ?></h2>
+
+            <div class="dateAuthor">
+            <p><?php echo the_date() . '/&nbsp by'; ?></p>
+            <p><?php the_author(); ?></p>
+            </div>
+
     <?php the_post_thumbnail(); ?>
-    <?php the_content(); ?>
-   
+ 
+    <p><?php echo wp_trim_words(get_the_content(), 20, '[...]') ; ?></p>
    
     </div>
     <!-- Loop ends -->

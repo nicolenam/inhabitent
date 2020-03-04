@@ -12,25 +12,20 @@
 <!-- <img id="homeBackground" src="wp-content/themes/inhabitent/assets/images/home-hero.jpg"> -->
 
 <header>
-        <nav class="<?php echo is_page(array('ABOUT', 'Home')) ? 'main-menu ' : 'main-menu2' ;?>">
+        
 
-        <form role="search" method="get" action="<?php echo home_url('/')?>">
-                <fieldset>
-                    <a href="#" class="search-toggle">
-                        <i class="fa fa-search"></i>
-                    </a>
-                    <label>
-                         <input placeholder="Type and hit enter" type="search" name="s" value="<?php echo esc_attr(get_search_query()) ;?>" />
-                    </label>
-                    <input type="submit" id="search-submit" value="<?php echo esc_attr('Search')?>"/>
-                </fieldset>
-        </form>
+        <a href="./home"><img id="tent" src="<?php echo get_template_directory_uri();?>/assets/images/logos/inhabitent-logo-tent-white.svg"></a>
+        <nav class="<?php echo is_page(array('ABOUT', 'Home')) ? 'main-menu ' : 'main-menu2' ;?>">
+        
 
             <?php wp_nav_menu(array(
             'theme_location' => 'main'
             )) ;?>  
-   
 
+            <!-- SEARCH GOES HERE -->
+            <div class="header-search">
+              <?php get_search_form();?>
+            </div>
 
         </nav>
 </header>
