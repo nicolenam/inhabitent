@@ -97,7 +97,9 @@ table {
   font-style: italic; }
 
 fieldset {
-  position: fixed; }
+  position: fixed;
+  top: 30px;
+  right: 50px; }
 
 footer {
   background-image: url(./assets/images/dark-wood.png);
@@ -261,7 +263,7 @@ body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   position: fixed;
-  width: 100%;
+  width: 95%;
   font-family: "Novecento Sans Web"; }
 
 .main-menu a {
