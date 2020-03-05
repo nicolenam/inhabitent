@@ -79,11 +79,10 @@ foreach($terms as $term) :
    <h4> <?php the_title() ?> </h4>
    </div>
   </div>
-
     <?php endforeach; wp_reset_postdata(); ?>
 </div>
    
-<article>
+<!-- <article>
   <h2 class="title">LATEST ADVENTURES</h2>
     <div class="adGrid">
         <div class="adItems">
@@ -112,6 +111,6 @@ foreach($terms as $term) :
           <button>READ MORE</button>
         </div>
     </div>
-</article>
+</article> -->
 
 <?php get_footer();?>

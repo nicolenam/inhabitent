@@ -25,11 +25,6 @@
 
 </div>
 
-
-
-
-
-
 <div class="productGrid">
             <?php if( have_posts() ) :
 

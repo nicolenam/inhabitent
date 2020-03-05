@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<a href="./home"><img id="tent" src="<?php echo get_template_directory_uri();?>/assets/images/logos/inhabitent-logo-tent.svg"></a>
 <p>You searched for " <?php echo esc_html( get_search_query( false ) ); ?> ". Here are the results:</p>
 <?php the_title(); ?>
 
@@ -12,9 +11,7 @@
     
     <!-- <h3><?php the_permalink();?></h3> -->
     <h2><?php the_title(); ?></h2>
-    <?php the_content(); ?>
-    <?php the_post_thumbnail(); ?>
- 
+    <?php the_content(); ?> 
    
      <!-- Loop ends -->
     <?php endwhile;?>
