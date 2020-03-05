@@ -71,37 +71,8 @@
             <button class="journalBtn">READ ENTRY</button>
         </div>
   </div>
-</article>
-<article>
-  <h2 class="title">LATEST ADVENTURES</h2>
-    <div class="adGrid">
-        <div class="adItems">
-          <img src="wp-content/themes/inhabitent/assets/images/adventure-photos/canoe-girl.jpg" alt="">
-          <p>Getting Back to </br>
-            Nature in a Canoe</p>
-          <button>READ MORE</button>
-        </div>
-        <div class="adItems">
-          <img src="wp-content/themes/inhabitent/assets/images/adventure-photos/beach-bonfire.jpg" alt="">
-          <p>A Night with Friends at </br>
-            the Beach</p>
-          <button>READ MORE</button>
-        </div>
-        <div class="adItems">
-          <img src="wp-content/themes/inhabitent/assets/images/adventure-photos/mountain-hikers.jpg" alt="">
-          <p>Taking in the </br>
-            view at Big</br>
-            Mountain</p>
-          <button>READ MORE</button>
-        </div>
-        <div class="adItems">
-          <img src="wp-content/themes/inhabitent/assets/images/adventure-photos/night-sky.jpg" alt="">
-          <p>Star-Gazing at </br>
-            the Night Sky</p>
-          <button>READ MORE</button>
-        </div>
-    </div>
 </article> -->
+
 <?php if( have_posts() ) :
 
 //The WordPress Loop: loads post content 
@@ -181,7 +152,35 @@ foreach($terms as $term) :
     <?php endforeach; wp_reset_postdata(); ?>
 </div>
    
-
-<h2 class="title">LATEST ADVENTURES</h2>
+<article>
+  <h2 class="title">LATEST ADVENTURES</h2>
+    <div class="adGrid">
+        <div class="adItems">
+          <img src="wp-content/themes/inhabitent/assets/images/adventure-photos/canoe-girl.jpg" alt="">
+          <p>Getting Back to </br>
+            Nature in a Canoe</p>
+          <button>READ MORE</button>
+        </div>
+        <div class="adItems">
+          <img src="wp-content/themes/inhabitent/assets/images/adventure-photos/beach-bonfire.jpg" alt="">
+          <p>A Night with Friends at </br>
+            the Beach</p>
+          <button>READ MORE</button>
+        </div>
+        <div class="adItems">
+          <img src="wp-content/themes/inhabitent/assets/images/adventure-photos/mountain-hikers.jpg" alt="">
+          <p>Taking in the </br>
+            view at Big</br>
+            Mountain</p>
+          <button>READ MORE</button>
+        </div>
+        <div class="adItems">
+          <img src="wp-content/themes/inhabitent/assets/images/adventure-photos/night-sky.jpg" alt="">
+          <p>Star-Gazing at </br>
+            the Night Sky</p>
+          <button>READ MORE</button>
+        </div>
+    </div>
+</article>
 
 <?php get_footer();?>

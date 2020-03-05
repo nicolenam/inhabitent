@@ -76,6 +76,7 @@ function inhabitent_post_types(){
         ),
         'menu_icon' => 'dashicons-store'
     ));
+    
 
     //Register Custom Taxonomy
         $labels = array(
@@ -107,7 +108,8 @@ function inhabitent_post_types(){
             'show_tagcloud'              => true,
         );
         register_taxonomy( 'product-type', array( 'product' ), $args );
-}
+
+    }
 
 
 ?>

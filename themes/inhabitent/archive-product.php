@@ -23,8 +23,12 @@
     while( have_posts() ) :
         the_post(); ?>
 
+    <a href="<?php the_permalink();?>">
+    
     <div class="shopItems">
-    <?php the_post_thumbnail()?>
+     <?php the_post_thumbnail()?>
+    
+     <!-- <a href="<?php the_permalink();?>"> -->
 
     <span class="priceCont">
         <p><?php the_title(); ?><p>
@@ -36,7 +40,7 @@
 
     </div>
     
-    <!-- <h3><?php the_permalink();?></h3> -->
+    
     <!-- <?php the_content(); ?> -->
    
  

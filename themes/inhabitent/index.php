@@ -9,9 +9,7 @@
     while( have_posts() ) :
         the_post(); ?>
     
-    
-    <!-- <h3><?php the_permalink();?></h3> -->
-    <div class="journalLayout">
+      <div class="journalLayout">
 
         <h2><?php the_title(); ?></h2>
 
@@ -23,6 +21,9 @@
     <?php the_post_thumbnail(); ?>
  
     <p><?php echo wp_trim_words(get_the_content(), 20, '[...]') ; ?></p>
+
+    <a href="<?php the_permalink();?>">
+    <button>  READ MORE -></button>
    
     </div>
     <!-- Loop ends -->
