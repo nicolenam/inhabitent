@@ -9,16 +9,16 @@
     while( have_posts() ) :
         the_post(); ?>
     
+
       <div class="journalLayout">
-
-        <h2><?php the_title(); ?></h2>
-
+      <h2><?php the_title(); ?></h2> 
+        <div class="flex">
+            <?php the_post_thumbnail(); ?>
             <div class="dateAuthor">
             <p><?php echo the_date() . '/&nbsp by'; ?></p>
             <p><?php the_author(); ?></p>
             </div>
-
-    <?php the_post_thumbnail(); ?>
+        </div>
  
     <p><?php echo wp_trim_words(get_the_content(), 20, '[...]') ; ?></p>
 

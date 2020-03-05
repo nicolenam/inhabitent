@@ -17,10 +17,9 @@
        <!-- SEARCH GOES HERE -->
        <div class="header-search">
               <?php get_search_form();?>
-            </div>
+       </div>
 
-         
-      <a href="./home">
+      <a href="<?php echo get_home_url(); ?>">   
       <img id="tent" src="<?php echo is_page(array('About', 'Home')) ? 
       get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-tent-white.svg' :
       get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-tent.svg' ;?> " > 
