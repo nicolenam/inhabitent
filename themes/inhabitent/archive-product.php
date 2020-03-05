@@ -1,18 +1,33 @@
 <?php get_header(); ?>
-<a href="./home"><img id="tent" src="<?php echo get_template_directory_uri();?>/assets/images/logos/inhabitent-logo-tent.svg"></a>
+
 <div class="onHero">
 <!-- <?php the_post_thumbnail(); ?> -->
 <h2 id="shopTitle">SHOP STUFF</h2>
 </div>
 <div class="shopContainer">
-<p>DO</p>
-<p>EAT</p>
-<p>SLEEP</p>
-<p>WEAR</p>
+
+
+<?php 
+$terms = get_terms(array(
+  'taxonomy' => 'product-type',
+  'hide_empty' => false
+));
+
+
+foreach($terms as $term) : 
+?>
+
+    <?php echo "<p>";
+          echo $term->name; 
+          echo "</p>";
+    ?>
+<?php endforeach; ?>
+
 </div>
 
 
 
+</div>
 
 
 <div class="productGrid">
@@ -24,7 +39,7 @@
         the_post(); ?>
 
     <a href="<?php the_permalink();?>">
-    
+   
     <div class="shopItems">
      <?php the_post_thumbnail()?>
     

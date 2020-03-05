@@ -12,19 +12,27 @@
 <header>
         
 
-        <a href="./home"><img id="tent" src="<?php echo get_template_directory_uri();?>/assets/images/logos/inhabitent-logo-tent-white.svg"></a>
-        <nav class="<?php echo is_page(array('ABOUT', 'Home')) ? 'main-menu ' : 'main-menu2' ;?>">
+      <nav class="<?php echo is_page(array('ABOUT', 'Home')) ? 'main-menu ' : 'main-menu2' ;?>">
+      
+       <!-- SEARCH GOES HERE -->
+       <div class="header-search">
+              <?php get_search_form();?>
+            </div>
+
+         
+      <a href="./home">
+      <img id="tent" src="<?php echo is_page(array('About', 'Home')) ? 
+      get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-tent-white.svg' :
+      get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-tent.svg' ;?> " > 
+      </a> 
         
+    
 
             <?php wp_nav_menu(array(
             'theme_location' => 'main',
             )) ;?>  
 
-            <!-- SEARCH GOES HERE -->
-            <div class="header-search">
-              <?php get_search_form();?>
-            </div>
-
+           
         </nav>
 </header>
 

@@ -228,6 +228,8 @@ footer {
     grid-column: 1;
     padding-bottom: 20px;
     margin-top: 20px; }
+  .posts p {
+    grid-column: 1; }
 
 .sidebar {
   grid-column: 2/3;
@@ -545,7 +547,8 @@ p {
   padding-left: 30px;
   color: #248a83;
   font-family: "Novecento Sans Web";
-  font-size: 16px; }
+  font-size: 16px;
+  text-transform: uppercase; }
 
 .priceCont {
   display: -webkit-box;

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<a href="./home"><img id="tent" src="<?php echo get_template_directory_uri();?>/assets/images/logos/inhabitent-logo-tent.svg"></a>
+
 <div class="posts">
 <?php get_sidebar(); ?>
 
