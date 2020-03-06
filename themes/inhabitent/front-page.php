@@ -77,6 +77,8 @@ foreach($terms as $term) :
    <p><?php echo the_date();?></p>
    <!-- <p><?php echo get_comments();?></p> -->
    <h4> <?php the_title() ?> </h4>
+   <a href="<?php the_permalink();?>">
+   <button class="journalBtn">READ ENTRY</button></a>
    </div>
   </div>
     <?php endforeach; wp_reset_postdata(); ?>

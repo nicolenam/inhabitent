@@ -94,7 +94,7 @@ img {
   filter: brightness(100%);
 }
 
-p {
+.items p {
   font-size: 12px;
   color: black;
   font-family: $description_font;
@@ -108,7 +108,10 @@ p {
   color: black;
   font-family: $description_font;
   text-align: left;
+  margin-right: 0px;
+  margin-left: 0px;
 }
+
 // JOURNAL GRID
 
 .journalGrid {
@@ -131,6 +134,8 @@ p {
   display: flex;
   flex-direction: column;
   width: 400px;
+  line-height: 30px;
+
 }
 
 .jItems {

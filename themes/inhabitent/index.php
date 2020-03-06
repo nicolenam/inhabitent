@@ -19,12 +19,15 @@
             <p><?php the_author(); ?></p>
             </div>
         </div>
- 
+        
+
+
     <p><?php echo wp_trim_words(get_the_content(), 20, '[...]') ; ?></p>
 
-    <a href="<?php the_permalink();?>">
-    <button>  READ MORE -></button>
-   
+    <a href="<?php the_permalink();?>">    
+    <button class="journalBtn">  READ MORE -></button>
+    </a>
+  
     </div>
     <!-- Loop ends -->
     <?php endwhile;?>

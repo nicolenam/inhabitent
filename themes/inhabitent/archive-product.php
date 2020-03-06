@@ -33,11 +33,12 @@
                 while( have_posts() ) :
                     the_post(); ?>
 
-                <a href="<?php the_permalink();?>">
+              
             
                 <div class="shopItems">
+                <a href="<?php the_permalink();?>">
                 <?php the_post_thumbnail()?>
-                
+                </a> 
             
                 <span class="priceCont">
                     <p><?php the_title(); ?><p>
@@ -46,7 +47,7 @@
                     <!-- </span> -->
                     
                 </span>
-
+                   
 </div>
  
     <!-- Loop ends -->

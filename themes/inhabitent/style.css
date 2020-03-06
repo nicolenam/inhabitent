@@ -117,6 +117,10 @@ footer {
 .textwidget span {
   padding-right: 10px; }
 
+.textwidget a {
+  text-decoration: none;
+  color: white; }
+
 #text-5 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,7 +200,8 @@ footer {
     -o-object-fit: cover;
        object-fit: cover; }
   .journalLayout p {
-    font-family: "Merriweather Web"; }
+    font-family: "Merriweather Web";
+    font-size: 12px; }
   .journalLayout #text {
     font-family: "Merriweather Web";
     font-size: 16px; }
@@ -217,15 +222,13 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #248a83;
-  width: 200px;
-  bottom: 30px;
-  right: 0px; }
+  background: #248a83; }
   .dateAuthor p {
     color: white;
     padding-left: 10px;
     padding-bottom: 10px;
-    padding-top: 10px; }
+    padding-top: 10px;
+    font-size: 12px; }
 
 .posts {
   display: grid;
@@ -233,14 +236,18 @@ footer {
   margin-left: 100px; }
   .posts h2 {
     margin-top: 70px;
-    font-family: "Novecento Sans Web Bold"; }
+    font-family: "Novecento Sans Web Bold";
+    grid-column: 1; }
   .posts h3 {
     font-family: "Novecento Sans Web Bold";
     grid-column: 1;
     padding-bottom: 20px;
     margin-top: 20px; }
   .posts p {
-    grid-column: 1; }
+    grid-column: 1;
+    font-size: 16px;
+    color: black;
+    font-family: "Merriweather Web"; }
 
 .sidebar {
   grid-column: 2/3;
@@ -283,6 +290,15 @@ button {
   padding: 5px;
   padding-left: 20px;
   padding-right: 20px; }
+
+.journalBtn {
+  background-color: white;
+  border: solid;
+  color: black;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 144px; }
 
 body {
   background: white;
@@ -397,7 +413,7 @@ img {
   -webkit-filter: brightness(100%);
           filter: brightness(100%); }
 
-p {
+.items p {
   font-size: 12px;
   color: black;
   font-family: "Merriweather Web";
@@ -410,7 +426,9 @@ p {
   font-size: 12px;
   color: black;
   font-family: "Merriweather Web";
-  text-align: left; }
+  text-align: left;
+  margin-right: 0px;
+  margin-left: 0px; }
 
 .journalGrid {
   display: grid;
@@ -433,7 +451,8 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 400px; }
+  width: 400px;
+  line-height: 30px; }
 
 .jItems {
   display: -webkit-box;
@@ -588,6 +607,11 @@ p {
       justify-content: space-around;
   margin-top: 10px;
   margin-bottom: 10px; }
+
+.priceCont p {
+  font-size: 12px;
+  color: black;
+  font-family: "Merriweather Web"; }
 
 .proGrid {
   display: grid;

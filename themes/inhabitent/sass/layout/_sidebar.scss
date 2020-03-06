@@ -24,6 +24,7 @@
   }
   p {
     font-family: $description_font;
+    font-size: 12px;
   }
   #text {
     font-family: $description_font;
@@ -40,14 +41,12 @@
 .dateAuthor {
   display: flex;
   background: #248a83;
-  width: 200px;
-  bottom: 30px;
-  right: 0px;
   p {
     color: white;
     padding-left: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
+    font-size: 12px;
   }
 }
 
@@ -58,6 +57,7 @@
   h2 {
     margin-top: 70px;
     font-family: $title_font;
+    grid-column: 1;
   }
   h3 {
     font-family: $title_font;
@@ -67,7 +67,10 @@
   }
   p {
     grid-column: 1;
-  }
+    font-size: 16px;
+    color: black;
+    font-family: $description_font;
+   }
 }
 
 .sidebar {
@@ -99,3 +102,4 @@
   text-decoration: none;
   font-family: $description_font;
 }
+
